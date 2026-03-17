@@ -14,7 +14,7 @@ DATABASE AND TABLE MANAGEMENT
        skill_id INT AUTO_INCREMENT PRIMARY KEY,
        skill_name VARCHAR(100) NOT NULL,
        category VARCHAR(100)
-   );```
+   );
 
 4. Show all databases available on the SQL server.
   ``` SHOW DATABASES;```
