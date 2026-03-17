@@ -4,25 +4,29 @@ DATABASE AND TABLE MANAGEMENT
 -------------------------------
 
 1. Create a new database called company_db.
-   ```CREATE DATABASE IF NOT EXISTS company_db;```
+   ```
+   CREATE DATABASE IF NOT EXISTS company_db;
+   ```
 
-2. Select the company_db database for use.
-   ```USE company_db;```
+3. Select the company_db database for use.
+   ```
+   USE company_db;
+   ```
 
-3. Create a table named skills with columns: skill_id (auto-incremented primary key), skill_name (varchar, not null), and category (varchar).
+5. Create a table named skills with columns: skill_id (auto-incremented primary key), skill_name (varchar, not null), and category (varchar).
    ```CREATE TABLE IF NOT EXISTS skills (
        skill_id INT AUTO_INCREMENT PRIMARY KEY,
        skill_name VARCHAR(100) NOT NULL,
        category VARCHAR(100)
    );```
 
-4. Show all databases available on the SQL server.
+6. Show all databases available on the SQL server.
   ``` SHOW DATABASES;```
 
-5. Show all tables in the company_db database.
+7. Show all tables in the company_db database.
    ```SHOW TABLES;```
 
-6. Rename the employee table to staff.
+8. Rename the employee table to staff.
    ```RENAME TABLE employee TO staff;```
 
 
