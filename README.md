@@ -7,45 +7,45 @@ DATABASE AND TABLE MANAGEMENT
    ```CREATE DATABASE IF NOT EXISTS company_db;```
 
 2. Select the company_db database for use.
-   USE company_db;
+   ```USE company_db;```
 
 3. Create a table named skills with columns: skill_id (auto-incremented primary key), skill_name (varchar, not null), and category (varchar).
-   CREATE TABLE IF NOT EXISTS skills (
+   ```CREATE TABLE IF NOT EXISTS skills (
        skill_id INT AUTO_INCREMENT PRIMARY KEY,
        skill_name VARCHAR(100) NOT NULL,
        category VARCHAR(100)
-   );
+   );```
 
 4. Show all databases available on the SQL server.
-   SHOW DATABASES;
+  ``` SHOW DATABASES;```
 
 5. Show all tables in the company_db database.
-   SHOW TABLES;
+   ```SHOW TABLES;```
 
 6. Rename the employee table to staff.
-   RENAME TABLE employee TO staff;
+   ```RENAME TABLE employee TO staff;```
 
 
 DATA INSERTION
 -------------------------------
 
 7. Insert a new record into the employee table for an employee named "Alice Green" with email "alice.green@company.com", hire date "2024-01-10", salary 62000.00, dept_id 4, and gender "Female".
-   INSERT INTO employee (first_name, last_name, email, hire_date, salary, dept_id, gender)
-   VALUES ('Alice', 'Green', 'alice.green@company.com', '2024-01-10', 62000.00, 4, 'Female');
+   ```INSERT INTO employee (first_name, last_name, email, hire_date, salary, dept_id, gender)
+   VALUES ('Alice', 'Green', 'alice.green@company.com', '2024-01-10', 62000.00, 4, 'Female');```
 
 8. Insert multiple records into the project table.
-   INSERT INTO project (project_name, budget, dept_id)
+   ```INSERT INTO project (project_name, budget, dept_id)
    VALUES 
    ('Mobile App', 60000.00, 2),
-   ('Training Program', 25000.00, 1);
+   ('Training Program', 25000.00, 1);```
 
 9. Add a new department "Sales" located in "Boston".
-   INSERT INTO department (dept_name, location)
-   VALUES ('Sales', 'Boston');
+   ```INSERT INTO department (dept_name, location)
+   VALUES ('Sales', 'Boston');```
 
 10. Insert an employee named "Tom" with only first name and email.
-    INSERT INTO employee (first_name, email)
-    VALUES ('Tom', 'tom@company.com');
+    ```INSERT INTO employee (first_name, email)
+    VALUES ('Tom', 'tom@company.com');```
 
 
 
