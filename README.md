@@ -4,7 +4,7 @@ DATABASE AND TABLE MANAGEMENT
 -------------------------------
 
 1. Create a new database called company_db.
-   CREATE DATABASE IF NOT EXISTS company_db;
+   ```CREATE DATABASE IF NOT EXISTS company_db;```
 
 2. Select the company_db database for use.
    USE company_db;
