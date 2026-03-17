@@ -31,21 +31,21 @@ DATA INSERTION
 
 7. Insert a new record into the employee table for an employee named "Alice Green" with email "alice.green@company.com", hire date "2024-01-10", salary 62000.00, dept_id 4, and gender "Female".
    ```INSERT INTO employee (first_name, last_name, email, hire_date, salary, dept_id, gender)
-   VALUES ('Alice', 'Green', 'alice.green@company.com', '2024-01-10', 62000.00, 4, 'Female');```
+   VALUES ('Alice', 'Green', 'alice.green@company.com', '2024-01-10', 62000.00, 4, 'Female');
 
 8. Insert multiple records into the project table.
    ```INSERT INTO project (project_name, budget, dept_id)
    VALUES 
    ('Mobile App', 60000.00, 2),
-   ('Training Program', 25000.00, 1);```
+   ('Training Program', 25000.00, 1);
 
 9. Add a new department "Sales" located in "Boston".
    ```INSERT INTO department (dept_name, location)
-   VALUES ('Sales', 'Boston');```
+   VALUES ('Sales', 'Boston');
 
 10. Insert an employee named "Tom" with only first name and email.
     ```INSERT INTO employee (first_name, email)
-    VALUES ('Tom', 'tom@company.com');```
+    VALUES ('Tom', 'tom@company.com');
 
 
 
@@ -53,25 +53,25 @@ DATA RETRIEVAL
 -------------------------------
 
 11. Retrieve all records from the employee table.
-    SELECT * FROM employee;
+    ```SELECT * FROM employee;
 
 12. Display employee ID, first name, and email with column aliases.
-    SELECT emp_id AS "Employee ID",
+    ```SELECT emp_id AS "Employee ID",
            first_name AS "Name",
            email AS "Email Address"
     FROM employee;
 
 13. List employees hired after January 1, 2023.
-    SELECT * FROM employee
+    ```SELECT * FROM employee
     WHERE hire_date > '2023-01-01';
 
 14. Retrieve all projects with a budget greater than 40000 and sort them in descending order.
-    SELECT * FROM project
+    ```SELECT * FROM project
     WHERE budget > 40000
     ORDER BY budget DESC;
 
 15. Show distinct locations from the department table.
-    SELECT DISTINCT location FROM department;
+    ```SELECT DISTINCT location FROM department;
 
 
 
